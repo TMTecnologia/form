@@ -5,6 +5,39 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="TMTecnologia - Contato">
   <main class="m-0 p-0">
     <h1>Thales Menezes Tecnologia - TMTecnologia</h1>
+    <form
+      target="_blank"
+      action="https://formsubmit.co/db3f3c8625405439151bac552e369251"
+      method="POST"
+    >
+      <input
+        type="text"
+        name="name"
+        class="form-control"
+        placeholder="Nome"
+        required
+      />
+      <input
+        type="email"
+        name="email"
+        class="form-control"
+        placeholder="Email"
+        required
+      />
+      <textarea
+        placeholder="Conte-nos um pouco mais sobre seu sonho"
+        class="form-control"
+        name="message"
+        rows="10"
+        required></textarea>
+      <input type="hidden" name="_subject" value="Novo contato!" />
+      <input
+        type="hidden"
+        name="_autoresponse"
+        value="Obrigado pelo seu contato, em breve estaremos avaliando a melhor forma de codificar seu sonho"
+      />
+      <button type="submit" class="">Submit Form</button>
+    </form>
   </main>
 </Layout>
 
